@@ -3,7 +3,7 @@
 module Whatsapp
   module Messages
     # Send messages by Whatsapp
-    class Text < Whatsapp::Messages
+    class Text < Whatsapp::BaseMessages
       # sender_id Integer is the identification of number in meta
       # recipient_number Integer is the numbet to send messages
       # Message String is text to send
