@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Whatsapp
-  class Messages
+  class BaseMessages
     attr_reader :client
 
     def initialize(client: WhatsappSdk::Api::Messages.new)

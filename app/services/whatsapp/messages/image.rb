@@ -3,12 +3,12 @@
 module Whatsapp
   module Messages
     # Send messages by Whatsapp
-    class Image < Whatsapp::Messages
+    class Image < Whatsapp::BaseMessages
       # sender_id Integer is the identification of number in meta
       # recipient_number Integer is the numbet to send messages
       # Caption String text sending with image
       # Link String with url of image
-      def audio(sender_id:, recipient_number:, link:, caption:)
+      def call(sender_id:, recipient_number:, link:, caption:)
         client
           .send_image(
             sender_id:,
